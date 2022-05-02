@@ -1,0 +1,25 @@
+.inventory-title{
+    text-align: center;
+    color: rgb(45, 45, 46);
+
+}
+
+.inventory-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 24px;
+}
+
+/* make inventory responsive */
+
+@media only screen and (max-width:576px){
+    .inventory-container{
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+
+@media only screen and (min-width: 577px) and (max-width: 992px){
+    .inventory-container{
+        grid-template-columns: repeat(2,2fr);
+    }
+}

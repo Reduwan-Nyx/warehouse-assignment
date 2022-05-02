@@ -1,0 +1,62 @@
+[
+    {
+        "id":1, 
+        
+        "name":"Summer Asian Slaw", "description": "Spicey with garlic and deep fried to crispy perfection", "price": "1600", "quantity": "7", "suppliername": "salman ahmed" ,"img": "https://images.unsplash.com/photo-1569718212165-3a8278d5f624?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8Zm9vZHxlbnwwfDJ8MHx8&auto=format&fit=crop&w=500&q=60" },
+        
+        {
+        "id":2, 
+        
+        "name":"Specific Muscle", "description": "Spicey with garlic and deep fried to crispy perfection","price": "1100", "quantity": "6", "suppliername": "Reduwan ahmed" , "img": "https://images.unsplash.com/photo-1514326640560-7d063ef2aed5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8Zm9vZHxlbnwwfDJ8MHx8&auto=format&fit=crop&w=500&q=60" },
+        
+        {
+        "id":3,
+        
+        "name":"vegetable and meat and bowl", "description": "Spicey with garlic and deep fried to crispy perfection",  "price": "1700", "quantity": "5", "suppliername": "jacky" , "img": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8Zm9vZHxlbnwwfDJ8MHx8&auto=format&fit=crop&w=500&q=60" },
+        
+        {
+        "id":4,
+        
+        "name":"Sandwitch with boild egg", "description": "Spicey with garlic and deep fried to crispy perfection",  "price": "1500", "quantity": "4", "suppliername": "rocky" , "img": "https://images.unsplash.com/photo-1557748362-4e95f0de4f6f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8Zm9vZHxlbnwwfDJ8MHx8&auto=format&fit=crop&w=500&q=60" }, 
+        
+        {
+        "id":5,
+        
+        "name":"vowl of vegetable salads", "description": "Spicey with garlic and deep fried to crispy perfection",  "price": "500", "quantity": "8", "suppliername": "Rohan" , "img": "https://images.unsplash.com/photo-1572449043416-55f4685c9bb7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8Zm9vZHxlbnwwfDJ8MHx8&auto=format&fit=crop&w=500&q=60" }, 
+        
+        {
+        "id":6,
+        
+        "name":"sliced strawberries", "description": "Spicey with garlic and deep fried to crispy perfection",  "price": "1200", "quantity": "9", "suppliername": "addita" , "img": "https://images.unsplash.com/photo-1546039907-7fa05f864c02?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NTl8fGZvb2R8ZW58MHwyfDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" },
+        
+        {
+        "id":7, 
+        
+        "name":"Vegetable Meat", "description": "Big hamburger with double beef and french fries Premium Photo",  "price": "2100", "quantity": "11", "suppliername": "kate" , "img": "https://images.unsplash.com/photo-1585238342070-61e1e768b1ff?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTMwfHxmb29kfGVufDB8MnwwfHw%3D&auto=format&fit=crop&w=500&q=60" },
+        
+        {
+        "id":8, 
+        
+        "name":"Big hamburger", "description": "Spicey with garlic and deep fried to crispy perfection",  "price": "1100", "quantity": "10", "suppliername": "Reduwan ahmed" , "img": "https://images.unsplash.com/photo-1586190848861-99aa4a171e90?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fGZvb2R8ZW58MHwyfDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" }, 
+        
+        {
+        "id":9, 
+        
+        "name":"Pizza", "description": "Spicey with garlic and deep fried to crispy perfection",  "price": "800", "quantity": "12", "suppliername": "John william" , "img": "https://images.unsplash.com/photo-1585238342024-78d387f4a707?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTh8fGZvb2R8ZW58MHwyfDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" },
+        
+        {
+        "id":10,
+        
+        "name":"pancake with orange", "description": "Spicey with garlic and deep fried to crispy perfection",  "price": "400", "quantity": "13", "suppliername": "adita" , "img": "https://images.unsplash.com/photo-1490457843367-34b21b6ccd85?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTl8fGZvb2R8ZW58MHwyfDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" }, 
+        
+        {
+        "id":11, 
+        
+        "name":"cooked meat on pan", "description": "Spicey with garlic and deep fried to crispy perfection",  "price": "1400", "quantity": "5", "suppliername": "crish" , "img": "https://images.unsplash.com/photo-1516714435131-44d6b64dc6a2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzR8fGZvb2R8ZW58MHwyfDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" }, 
+        
+        {
+        "id":12,
+         "name":"Bowl of noodles", "description": "Spicey with garlic and deep fried to crispy perfection",  "price": "800", "quantity": "3", "suppliername": "johny dept" , "img": "https://images.unsplash.com/photo-1599314250681-8e05113e0e1b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjUyfHxmb29kfGVufDB8MnwwfHw%3D&auto=format&fit=crop&w=500&q=60" }
+    
+
+]

@@ -1,0 +1,18 @@
+.customer-container img{
+    width: 250px;
+    margin-left: 100px;
+    
+}
+
+.customer-container{
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+.card{
+    border: none;
+}
+
+.card-text{
+    width: 50%;
+    margin-left: 100px;
+}
