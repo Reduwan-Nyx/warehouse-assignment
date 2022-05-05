@@ -3,7 +3,7 @@ import React from 'react';
 const CheckOut = () => {
     return (
         <div>
-            <h2>Please checkout Your Booking</h2>
+            <h2>This is Checkout</h2>
         </div>
     );
 };

@@ -1,0 +1,15 @@
+.single-image img{
+    width: 200px;
+    border-radius: 50px;
+    margin: 10px;
+}
+
+.single-item{
+    width: 300px;
+    padding: 10px;
+    border: 1px solid rgb(48, 48, 48);
+}
+
+.singleitem-info{
+    text-align: center;
+}
