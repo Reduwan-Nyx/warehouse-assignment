@@ -23,7 +23,7 @@ const Inventory = () => {
           ))}
         </div>
         <Link to="/manageservice">
-          <button className="btn btn-primary">manage inventory</button>
+          <button className="btn btn-primary mt-4">manage inventory</button>
         </Link>
       </div>
     );

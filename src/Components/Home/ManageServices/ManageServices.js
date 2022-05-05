@@ -36,7 +36,7 @@ const ManageServices = () => {
             </p>
             <p>{inventories.quantity}</p>
             <h5>{inventories.suppliername}</h5>
-            <button onClick={() => handleDelete(inventories._id)}>
+            <button className='btn btn-primary mb-3' onClick={() => handleDelete(inventories._id)}>
               Delete
             </button>
           </div>
