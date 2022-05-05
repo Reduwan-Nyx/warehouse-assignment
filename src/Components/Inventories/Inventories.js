@@ -2,7 +2,7 @@ import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import './Inventories.css'
 const Inventories = ({ inventories }) => {
-  const {id, name, img, description, price, quantity, suppliername } = inventories;
+  const {_id, name, img, description, price, quantity, suppliername } = inventories;
 
   const navigate = useNavigate()
 
@@ -27,7 +27,7 @@ const Inventories = ({ inventories }) => {
         <small>suppliername:</small> {suppliername}
       </h5>
       <button
-        onClick={() => naviagteToServiceDetail(id)}
+        onClick={() => naviagteToServiceDetail(_id)}
         className="button-inv btn btn-primary"
       >
         Order: {name}

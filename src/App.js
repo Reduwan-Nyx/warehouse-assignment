@@ -11,6 +11,7 @@ import Login from './Components/Pages/Login/Login';
 import Register from './Components/Pages/Register/Register';
 import RequireAuth from './Components/Pages/RequireAuth/RequireAuth';
 import CheckOut from './Components/Home/CheckOut/CheckOut';
+import AddService from './Components/Home/AddService/AddService';
 
 
 
@@ -34,6 +35,14 @@ function App() {
           element={
             <RequireAuth>
               <CheckOut></CheckOut>
+            </RequireAuth>
+          }
+        ></Route>
+        <Route
+          path="/addservice"
+          element={
+            <RequireAuth>
+              <AddService></AddService>
             </RequireAuth>
           }
         ></Route>
