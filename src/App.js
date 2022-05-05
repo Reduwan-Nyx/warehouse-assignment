@@ -12,6 +12,7 @@ import Register from './Components/Pages/Register/Register';
 import RequireAuth from './Components/Pages/RequireAuth/RequireAuth';
 import CheckOut from './Components/Home/CheckOut/CheckOut';
 import AddService from './Components/Home/AddService/AddService';
+import ManageServices from './Components/Home/ManageServices/ManageServices';
 
 
 
@@ -43,6 +44,14 @@ function App() {
           element={
             <RequireAuth>
               <AddService></AddService>
+            </RequireAuth>
+          }
+        ></Route>
+        <Route
+          path="/manageservice"
+          element={
+            <RequireAuth>
+              <ManageServices></ManageServices>
             </RequireAuth>
           }
         ></Route>

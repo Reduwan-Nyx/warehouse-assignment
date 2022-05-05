@@ -16,11 +16,14 @@ const InventoryDetail = () => {
   return (
     <div>
       <h2>you are about to order food: {service.name}</h2>
-      <div className='text-center'>
+      <div className="text-center">
         <Link to="/CheckOut">
           <button className="btn btn-primary">Proceed Checkout</button>
         </Link>
       </div>
+      <Link to="/manageservice">
+        <button className="btn btn-primary d-block mx-auto mt-5">manage inventory</button>
+      </Link>
     </div>
   );
 };

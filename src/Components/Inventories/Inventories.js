@@ -32,6 +32,7 @@ const Inventories = ({ inventories }) => {
       >
         Order: {name}
       </button>
+     
     </div>
   );
 };

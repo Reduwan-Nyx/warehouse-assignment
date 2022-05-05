@@ -1,4 +1,3 @@
-
 import React from "react";
 import { Container, Nav, Navbar } from "react-bootstrap";
 import "./Header.css";
@@ -8,13 +7,12 @@ import { useAuthState } from "react-firebase-hooks/auth";
 import auth from "../../firebase.init";
 import { signOut } from "firebase/auth";
 
-
 const Header = () => {
-  const [user] = useAuthState(auth)
+  const [user] = useAuthState(auth);
 
-  const handleSignOut = () =>{
-    signOut(auth)
-  }
+  const handleSignOut = () => {
+    signOut(auth);
+  };
   return (
     <>
       <Navbar
@@ -35,21 +33,38 @@ const Header = () => {
                 Home
               </Nav.Link>
               <Nav.Link href="home#inventory">Inventory</Nav.Link>
-
             </Nav>
             <Nav>
-
               <Nav.Link as={Link} to="about">
                 About
               </Nav.Link>
-              
-                {
-                  user ?
-                    <button className="btn btn-link text-danger text-decoration-none" onClick={handleSignOut}>SignOut</button>
-                  :
-                  <Nav.Link as={Link} to="login">
+              {user && (
+                <>
+                  <Nav.Link as={Link} to="manageservice">
+                    Manage Item
+                  </Nav.Link>
+                   <Nav.Link as={Link} to="addservice">
+                    add Item
+                  </Nav.Link>
+                  <Nav.Link as={Link} to="myitems">
+                    My Items
+                  </Nav.Link>
+                  
+                </>
+              )}
+
+              {user ? (
+                <button
+                  className="btn btn-link text-danger text-decoration-none"
+                  onClick={handleSignOut}
+                >
+                  SignOut
+                </button>
+              ) : (
+                <Nav.Link as={Link} to="login">
                   LogIn
-                </Nav.Link>}
+                </Nav.Link>
+              )}
             </Nav>
           </Navbar.Collapse>
         </Container>
@@ -59,4 +74,3 @@ const Header = () => {
 };
 
 export default Header;
-

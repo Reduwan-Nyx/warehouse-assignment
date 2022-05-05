@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import Inventories from '../Inventories/Inventories';
 import './Inventory.css'
+import { Link } from "react-router-dom";
 const Inventory = () => {
 
     const [inventory, setInventory] = useState([])
@@ -11,9 +12,9 @@ const Inventory = () => {
         .then((data) => setInventory(data));
     },[])
     return (
-      <div id='inventory' className='inventory-title'>
-        <h2 className='m-5'>Our Inventory</h2>
-        <div className='inventory-container'>
+      <div id="inventory" className="inventory-title">
+        <h2 className="m-5">Our Inventory</h2>
+        <div className="inventory-container">
           {inventory.slice(6).map((inventories) => (
             <Inventories
               key={inventories._id}
@@ -21,6 +22,9 @@ const Inventory = () => {
             ></Inventories>
           ))}
         </div>
+        <Link to="/manageservice">
+          <button className="btn btn-primary">manage inventory</button>
+        </Link>
       </div>
     );
 };
