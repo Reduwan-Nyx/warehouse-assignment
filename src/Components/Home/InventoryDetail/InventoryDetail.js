@@ -1,8 +1,9 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
 
 const InventoryDetail = () => {
     const {inventoryId} = useParams()
+    const stockRef = useRef("")
     const [service, setService] = useState({})
     
    useEffect( ()=>{
@@ -13,6 +14,11 @@ const InventoryDetail = () => {
     .then(data => setService(data))
 
     },[])
+
+
+
+
+
   return (
     <div>
       <h2>you are about to order food: {service.name}</h2>

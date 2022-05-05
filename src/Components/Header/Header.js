@@ -36,7 +36,7 @@ const Header = () => {
             </Nav>
             <Nav>
               <Nav.Link as={Link} to="about">
-                About
+               Blog
               </Nav.Link>
               {user && (
                 <>
