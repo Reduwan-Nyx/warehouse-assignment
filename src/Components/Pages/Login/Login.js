@@ -6,7 +6,7 @@ import auth from '../../../firebase.init';
 import SocialLogin from '../SocialLogin/SocialLogin';
 import { useSendPasswordResetEmail } from 'react-firebase-hooks/auth';
 import Loading from '../Loading/Loading';
-import { ToastContainer, toast } from "react-toastify";
+import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 const Login = () => {
@@ -115,7 +115,7 @@ const [sendPasswordResetEmail, sending] = useSendPasswordResetEmail(auth);
           </button>
         </p>
         <SocialLogin></SocialLogin>
-        <ToastContainer />
+        
       </div>
     );
 };
