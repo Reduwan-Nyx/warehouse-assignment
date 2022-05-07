@@ -1,8 +1,9 @@
-import { async } from '@firebase/util';
+
 import axios from 'axios';
 import React, { useEffect, useState } from 'react';
 import { useAuthState } from 'react-firebase-hooks/auth';
 import auth from '../../../firebase.init';
+import './MyItems.css'
 
 const MyItems = () => {
   const [inventories, setinventories] = useState([])
@@ -40,18 +41,21 @@ const MyItems = () => {
   }, [user])
 
   return (
-    <div className='container'>
+    <div className='myitems-container'>
       <h2>Choose your Inventory</h2>
       <div className='allitems-cotnainer'>
         {
           inventories.map(inventory => <div key={inventory._id}>
             <div className='all-items'>
               <div>
+                <img width={200} src={inventory.img} alt="" />
+              </div>
+              <div>
                 <h5>{inventory.name}</h5>
                 <p><small>price: {inventory.price}</small></p>
               </div>
               <dir>
-                <button onClick={()=> handleButton(inventory._id)}>Delete</button>
+                <button className='btn btn-primary' onClick={()=> handleButton(inventory._id)}>Delete</button>
               </dir>
             </div>
           </div>

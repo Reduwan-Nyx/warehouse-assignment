@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react';
-import { useNavigate, useParams } from 'react-router-dom';
+import { Link, useNavigate, useParams } from 'react-router-dom';
 import './InventoryDetail.css'
 
 const InventoryDetail = () => {
@@ -102,7 +102,9 @@ const InventoryDetail = () => {
           </form>
         </div>
       </div>
-      
+      <Link to={`/checkout/${inventoryId}`}>
+                    <button className='btn btn-primary d-block mx-auto'>Proceed Checkout</button>
+                </Link>
     </div>
   );
 };
