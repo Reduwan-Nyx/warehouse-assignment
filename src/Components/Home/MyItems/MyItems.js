@@ -30,7 +30,7 @@ const MyItems = () => {
   useEffect(()=>{
     const getItems = async() =>{
       const email = user.email;
-      const url = `http://localhost:5000/myitems?email=${email}`
+      const url = `http://localhost:5000/inventory?email=${email}`
       if(email){
         const {data}= await axios.get(url)
         setinventories(data)
@@ -44,7 +44,18 @@ const MyItems = () => {
       <h2>Choose your Inventory</h2>
       <div className='allitems-cotnainer'>
         {
-          inventories.map(inventory => <div key={inventory._id}></div>)
+          inventories.map(inventory => <div key={inventory._id}>
+            <div className='all-items'>
+              <div>
+                <h5>{inventory.name}</h5>
+                <p><small>price: {inventory.price}</small></p>
+              </div>
+              <dir>
+                <button onClick={()=> handleButton(inventory._id)}>Delete</button>
+              </dir>
+            </div>
+          </div>
+          )
         }
       </div>
     </div>
