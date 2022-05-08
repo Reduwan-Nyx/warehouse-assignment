@@ -1,14 +1,14 @@
 const { useState, useEffect } = require("react");
 
-const useServices = ()=>{
-     const [inventory, setInventory] = useState([]);
+const useServices = () => {
+  const [inventory, setInventory] = useState([]);
 
-     useEffect(() => {
-       fetch("http://localhost:5000/inventory")
-         .then((res) => res.json())
-         .then((data) => setInventory(data));
-     }, []);
-     return [inventory, setInventory]
-}
+  useEffect(() => {
+    fetch("https://mighty-tundra-48234.herokuapp.com/inventory")
+      .then((res) => res.json())
+      .then((data) => setInventory(data));
+  }, []);
+  return [inventory, setInventory];
+};
 
 export default useServices;
