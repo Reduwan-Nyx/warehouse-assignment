@@ -1,7 +1,10 @@
 
-import axios from 'axios';
+
+import { signOut } from 'firebase/auth';
 import React, { useEffect, useState } from 'react';
 import { useAuthState } from 'react-firebase-hooks/auth';
+import { useNavigate } from 'react-router-dom';
+import axiosPrivate from '../../../api/axiosPrivate';
 import auth from '../../../firebase.init';
 import './MyItems.css'
 
@@ -9,6 +12,7 @@ const MyItems = () => {
   const [inventories, setinventories] = useState([])
   console.log(inventories);
   const [ user] = useAuthState(auth)
+  const navigate = useNavigate()
 
 
   const handleButton = id =>{
@@ -31,10 +35,17 @@ const MyItems = () => {
   useEffect(()=>{
     const getItems = async() =>{
       const email = user.email;
-      const url = `http://localhost:5000/inventory?email=${email}`
-      if(email){
-        const {data}= await axios.get(url)
+      const url = `http://localhost:5000/order?email=${email}`
+       try{
+        const {data}= await axiosPrivate.get(url)
         setinventories(data)
+       }
+      catch(error){
+        console.log(error.message);
+        if(error.response.status === 401 || 401){
+          signOut(auth)
+          navigate('/login')
+        }
       }
     }
     getItems()
@@ -43,20 +54,21 @@ const MyItems = () => {
   return (
     <div className='myitems-container'>
       <h2>Choose your Inventory</h2>
+      
       <div className='allitems-cotnainer'>
         {
           inventories.map(inventory => <div key={inventory._id}>
             <div className='all-items'>
               <div>
-                <img width={200} src={inventory.img} alt="" />
+
+                <h5>{inventory.email}</h5>
+                <p><small>price" {inventory.service}</small></p>
+                <p><small>id: {inventory._id}</small></p>
+                <p><small>address : {inventory.address}</small></p>
               </div>
               <div>
-                <h5>{inventory.name}</h5>
-                <p><small>price: {inventory.price}</small></p>
+                <button className='btn btn-primary' onClick={()=> handleButton(inventory._id)}>DELETE</button>
               </div>
-              <dir>
-                <button className='btn btn-primary' onClick={()=> handleButton(inventory._id)}>Delete</button>
-              </dir>
             </div>
           </div>
           )
