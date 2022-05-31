@@ -12,4 +12,4 @@ Halal food website is design with react and other fameworks like virual dom java
 ⚫ react router
 ⚫ One-way data binding
 ⚫ Components
-⚫ React Native.
+⚫ React Native
